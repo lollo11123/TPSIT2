@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class MCD {
+
+public static void main(String[] args) {
+Scanner scanner = new
+Scanner(System.in);
+
+System.out.print(&quot;Inserisci il primo
+numero: &quot;);
+int numero1 = scanner.nextInt();
+System.out.print(&quot;Inserisci il secondo
+numero: &quot;);
+int numero2 = scanner.nextInt();
+int mcd = calcolaMCD(numero1,
+numero2);
+
+System.out.println(&quot;Il Massimo
+Comune Divisore di &quot; + numero1 + &quot; e &quot; +
+
+numero2 + &quot; è: &quot; + mcd);
+
+scanner.close();
+}
+
+private static int calcolaMCD(int a, int b) {
+
+while (b!=0) {
+int temp = a;
+b = a/b;
+a = temp;
+}
+return a;
+}
+}
