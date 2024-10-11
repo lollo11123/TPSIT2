@@ -4,11 +4,13 @@ public class es02b {
  
     public static void main(String[] args) {
 
+        // args è il vettore che contiene i parametri passati da linea di comando
         if (args.length == 0) {
             System.out.println("Inserisci una sequenza di numeri.");
             return;
         }
 
+        
         final int A = 999999;
         final int B = -999999;
 
