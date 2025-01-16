@@ -21,5 +21,3 @@ public void setAltezza(int altezza) {
         r.setAltezza (20);
         }
     }
-
-    
