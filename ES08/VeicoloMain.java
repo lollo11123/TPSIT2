@@ -15,7 +15,7 @@ class Veicolo {
     }
 }
 
-/
+
 class Auto extends Veicolo {
     
     int numeroPorte;
@@ -48,7 +48,7 @@ class Moto extends Veicolo {
     }
 }
 
-public class Main {
+public class VeicoloMain {
     public static void main(String[] args) {
         Auto auto1 = new Auto("Fiat", "500", 5);
         Moto moto1 = new Moto("Harley-Davidson", "Iron 883", true);
