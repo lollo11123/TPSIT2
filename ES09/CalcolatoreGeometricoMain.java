@@ -1,14 +1,14 @@
-public interface Shape2D {
+interface Shape2D {
     double calcolaArea();
     double calcolaPerimetro();
 }
 
-public interface Shape3D {
+interface Shape3D {
     double calcolaVolume();
     double calcolaSuperficie();
 }
 
-public class Cerchio implements Shape2D {
+class Cerchio implements Shape2D {
     private double raggio;
 
     public Cerchio(double raggio) {
@@ -30,7 +30,7 @@ public class Cerchio implements Shape2D {
     }
 }
 
-public class Rettangolo implements Shape2D {
+class Rettangolo implements Shape2D {
     private double lunghezza;
     private double larghezza;
 
@@ -50,7 +50,7 @@ public class Rettangolo implements Shape2D {
     }
 }
 
-public class Sfera implements Shape3D {
+class Sfera implements Shape3D {
     private double raggio;
 
     public Sfera(double raggio) {
@@ -80,7 +80,7 @@ public class Sfera implements Shape3D {
     }
 }
 
-public class Cuboide implements Shape3D {
+class Cuboide implements Shape3D {
     private double lunghezza;
     private double larghezza;
     private double altezza;
@@ -102,7 +102,7 @@ public class Cuboide implements Shape3D {
     }
 }
 
-public class CalcolatoreGeometrico {
+class CalcolatoreGeometrico {
 
     public void stampaProprietàShape2D(Shape2D forma) {
         System.out.println("Area: " + forma.calcolaArea());
@@ -115,7 +115,7 @@ public class CalcolatoreGeometrico {
     }
 }
 
-public class Main {
+public class CalcolatoreGeometricoMain {
     public static void main(String[] args) {
         Shape2D cerchio = new Cerchio(5);
         Shape2D rettangolo = new Rettangolo(4, 7);
